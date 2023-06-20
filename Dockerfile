@@ -1,8 +1,5 @@
 FROM node:16.17.0-alpine3.15
 
-RUN apk add --no-cache libc6-compat
-RUN npm i -g npm
-
 EXPOSE 3000
 
 ENV PORT 3000
@@ -12,20 +9,24 @@ WORKDIR /home/app
 
 COPY ./package*.json .
 WORKDIR /home/app
-RUN npm install --omit=optional
-RUN npx browserslist@latest --update-db
-RUN npx next telemetry disable
+RUN yarn --omit=optional
 
 # need to install linux specific swc builds
-RUN npm install -D @swc/cli @swc/core
-
 COPY . .
 
-RUN npm run build
+RUN yarn build
+ENV NODE_ENV production
+# Uncomment the following line in case you want to disable telemetry during runtime.
+# ENV NEXT_TELEMETRY_DISABLED 1
 
-RUN addgroup -g 1001 -S nodejs
-RUN adduser -S nextjs -u 1001
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
 
 USER nextjs
 
-CMD [ "npm", "start" ]
+EXPOSE 3000
+
+ENV PORT 3000
+
+
+CMD [ "yarn", "start" ]
