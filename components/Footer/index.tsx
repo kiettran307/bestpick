@@ -5,14 +5,14 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="wow fadeInUp relative z-10 bg-primary bg-opacity-5 pt-16 md:pt-20 lg:pt-24"
+        className="relative z-10 pt-16 wow fadeInUp md:pt-20 lg:pt-24"
         data-wow-delay=".1s"
       >
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
+          <div className="flex flex-wrap -mx-4">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
-                <Link href="/" className="mb-8 inline-block">
+                <Link href="/" className="inline-block mb-8">
                   <Image
                     src="images/logo/logo-2.svg"
                     alt="logo"
@@ -28,7 +28,7 @@ const Footer = () => {
                     height={30}
                   />
                 </Link>
-                <p className="mb-9 text-base font-medium leading-relaxed text-body-color">
+                <p className="text-base font-medium leading-relaxed mb-9 text-body-color">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer lobortis.
                 </p>
@@ -102,7 +102,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="inline-block mb-4 text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       Blog{" "}
@@ -111,7 +111,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="inline-block mb-4 text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       Pricing{" "}
@@ -120,7 +120,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="inline-block mb-4 text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       About{" "}
@@ -139,7 +139,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="inline-block mb-4 text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       TOS{" "}
@@ -148,7 +148,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="inline-block mb-4 text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       Privacy Policy{" "}
@@ -157,7 +157,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="inline-block mb-4 text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       Refund Policy{" "}
@@ -176,7 +176,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="inline-block mb-4 text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       Open Support Ticket{" "}
@@ -185,7 +185,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="inline-block mb-4 text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       Terms of Use{" "}
@@ -194,7 +194,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="inline-block mb-4 text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}
                       About{" "}
@@ -205,9 +205,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="bg-primary/10 py-8">
+        <div className="py-8 bg-primary/10">
           <div className="container">
-            <p className="text-center text-base text-body-color dark:text-white">
+            <p className="text-base text-center text-body-color dark:text-white">
               Template by UIdeck and <a href="https://nextjstemplates.com" rel="nofollow noopener">Next.js Templates</a>
             </p>
           </div>
