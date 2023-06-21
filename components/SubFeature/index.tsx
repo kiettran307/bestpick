@@ -1,15 +1,6 @@
-import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
-import Slider from "react-slick";
 
 const SubFeatures = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3
-  };
   return (
     <section
       id="subFeature"
@@ -24,9 +15,6 @@ const SubFeatures = () => {
           />
         </div>
         <div className="w-2/3">
-        <Slider>
-          
-          </Slider>
         </div>
       </div>
     </section>
