@@ -1,17 +1,15 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import { AskedQuestions } from "@/components/AskedQuestions";
 import Blog from "@/components/Blog";
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
 import Features from "@/components/Features";
+import SubFeatures from "@/components/SubFeature";
 import Hero from "@/components/Hero";
 import { News } from "@/components/News";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import { UsefulFeatures } from "@/components/UsefulFeature";
-import Video from "@/components/Video";
 import { Inter } from "@next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,9 +20,7 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <Features />
-      <Video />
-      <AboutSectionOne />
-      <AboutSectionTwo />
+      <SubFeatures />
       {/* <Testimonials /> */}
       <UsefulFeatures/>
       <News/>
@@ -32,6 +28,10 @@ export default function Home() {
       <AskedQuestions/>
       {/* <Pricing /> */}
       {/* <Blog /> */}
+      <Brands />
+      <Testimonials />
+      <Pricing />
+      <Blog />
       <Contact />
     </>
   );
