@@ -26,12 +26,6 @@ export default function Home() {
       <News/>
       <Brands />
       <AskedQuestions/>
-      {/* <Pricing /> */}
-      {/* <Blog /> */}
-      <Brands />
-      <Testimonials />
-      <Pricing />
-      <Blog />
       <Contact />
     </>
   );
