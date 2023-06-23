@@ -23,9 +23,8 @@ export default function Home() {
       <SubFeatures />
       {/* <Testimonials /> */}
       <UsefulFeatures/>
-      <News/>
-      <Brands />
       <AskedQuestions/>
+      <News/>
       <Contact />
     </>
   );
