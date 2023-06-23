@@ -3,44 +3,24 @@ import { NewProps } from "./NewItem";
 const newData: NewProps[] = [
   {
    
-    title: "post new 1 ",
-    content:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ipsam?",
+    title: "What’s the best way to store and use spices? ",
+    content:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum tenetur hic eveniet repellendus nostrum minus id obcaecati voluptatem soluta corrupti?",
+    image:"/images/news/img-blog-1.png",
   },
   {
    
-    title: "post new 2",
-    content:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ipsam?",
+    title: "Nigel Slater’s recipe for roast carrots, garlic and orzo    ",
+    content:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum tenetur hic eveniet repellendus nostrum minus id obcaecati voluptatem soluta corrupti??",
+    image:"/images/news/img-blog-2.png",
   },
   {
    
-    title: "post new 3",
-    content:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ipsam?",
+    title: "Mackerel over coals and seaside madeleines – Emily Scott’s Cornish recipes    ",
+    content:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum tenetur hic  eveniet repellendus nostrum minus id obcaecati voluptatem soluta corrupti?",
+    image:"/images/news/img-blog-3.png",
   },
-  {
-   
-    title: "post new 4",
-    content:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ipsam?",
-  },
-  {
-   
-    title: "post new 5",
-    content:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ipsam?",
-  },
-  {
-   
-    title: "post new 6",
-    content:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ipsam?",
-  },
-  {
-   
-    title: "post new 7",
-    content:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ipsam?",
-  },
-  {
-   
-    title: "post new 8",
-    content:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ipsam?",
-  },
+ 
+
  
   
 ];

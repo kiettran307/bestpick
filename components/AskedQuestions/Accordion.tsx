@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
-
-
+import { MdExpandCircleDown } from "react-icons/md";
+import { IoIosArrowDropupCircle } from "react-icons/io";
 
 export function AccordionItem(props: {
   handleToggle: (id: string) => void;
@@ -14,31 +14,39 @@ export function AccordionItem(props: {
   useEffect(() => {
     if (active === id && contentEl.current) {
       contentEl.current.style.height = `${contentEl.current.scrollHeight}px`;
-      contentEl.current.style.transition = `all 0.5s ease`
+      contentEl.current.style.transition = `all 0.5s ease`;
     } else {
       contentEl.current?.style.setProperty("height", "0px");
-      contentEl.current.style.transition = `all 1s ease`
-
+      contentEl.current.style.transition = `all 1s ease`;
     }
   }, [active, id]);
   return (
-    <div className="border border-dark/[10%]">
-      <div className="">
-        <div
-          className={`flex justify-between items-center p-3 cursor-pointer `}
-          onClick={() => handleToggle(id)}
+    <div
+      className={`mb-4 rounded-lg  border ${
+        active === id ? "border-primary" : "border-[#CED2DA]"
+      } lg:max-w-[800px]`}
+    >
+      <div
+        className={`flex w-full cursor-pointer items-center justify-between p-8 lg:w-[800px]`}
+        onClick={() => handleToggle(id)}
+      >
+        <h5
+          className={`text-base font-medium lg:text-lg transition-all delay-75 ${
+            active === id ? "text-[#EABC18]" : "text-black"
+          }`}
         >
-          <h5 className="font-medium ">{header}</h5>
-          <span>{active === id ? "-" : "+"}</span>
-        </div>
+          {header}
+        </h5>
+        <span className="text-2xl text-primary">
+          {active === id ? <IoIosArrowDropupCircle /> : <MdExpandCircleDown />}
+        </span>
       </div>
+
       <div
         ref={contentEl}
-        className={` ${active === id ? "block" : "hidden"} transition-all`}
+        className={` ${active === id ? "block" : "hidden"} transition-all `}
       >
-        <div className="">
-          <p className="p-3 text-body-color">{text}</p>
-        </div>
+        <p className="px-8 pb-8 text-accent">{text}</p>
       </div>
     </div>
   );

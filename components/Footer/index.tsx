@@ -12,7 +12,7 @@ import { HiPhone } from "react-icons/hi";
 const Footer = () => {
   return (
     <>
-      <footer className="mt-8 lg:mt-10" data-wow-delay=".1s">
+      <footer className="mt-8 lg:mt-16" data-wow-delay=".1s">
         <div className="container border-b border-b-[#CED2DA]">
           <div className="flex flex-col -mx-4 lg:flex-row">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-4/12">
@@ -83,7 +83,7 @@ const Footer = () => {
                           href={nav.path || "/"}
                           className="flex flex-row items-center gap-2 mb-4 text-base font-light text-accent hover:text-primary"
                         >
-                           <i>{nav.icon || null}</i> 
+                           {nav.icon &&  <i>{nav.icon}</i>}
                            <span>
 
                            {nav.title}
