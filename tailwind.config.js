@@ -18,7 +18,7 @@ module.exports = {
       black: "#1F1F1A",
       dark: "#1D2144",
       primary: "#FFE228",
-      "primary-line": "#FFFDEA",
+      "primary-light": "#FFFDEA",
       yellow: "#FBB040",
       "body-color": "#959CB1",
     },
