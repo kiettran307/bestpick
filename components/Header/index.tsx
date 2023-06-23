@@ -37,14 +37,14 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header top-0 left-0 z-40 flex w-full items-center bg-primary ${
+        className={`header top-0 left-0 z-40 flex w-full items-center bg-white ${
           sticky
             ? "!fixed !z-[9999] shadow-sticky backdrop-blur-sm !transition"
             : "absolute"
         }`}
       >
-        <div className="container">
-          <div className="relative -mx-4 flex items-center justify-between">
+        <div className="container w-[1216px]">
+          <div className="relative -mx-4 flex items-center justify-between ">
             <div className="w-60 max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
@@ -53,18 +53,11 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/logo-2.svg"
+                  src="/images/logo/logo_bestpick.svg"
                   alt="logo"
-                  width={140}
-                  height={30}
-                  className="w-full dark:hidden"
-                />
-                <Image
-                  src="/images/logo/logo.svg"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="hidden w-full dark:block"
+                  width={132}
+                  height={47}
+                  className="w-full dark:block"
                 />
               </Link>
             </div>
@@ -106,7 +99,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-white text-dark group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
+                            className={`flex py-2 text-dark group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
                           >
                             {menuItem.title}
                           </Link>
@@ -114,7 +107,7 @@ const Header = () => {
                           <>
                             <a
                               onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center justify-between py-2 text-white text-dark group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:py-6 lg:px-0"
+                              className="flex cursor-pointer items-center justify-between py-2 text-dark group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:py-6 lg:px-0"
                             >
                               {menuItem.title}
                               <span className="pl-3">
@@ -135,7 +128,7 @@ const Header = () => {
                                 <Link
                                   href={submenuItem.path}
                                   key={submenuItem.id}
-                                  className="block rounded py-2.5 text-sm text-dark hover:opacity-70 dark:text-white lg:px-3"
+                                  className="block rounded py-2.5 text-sm text-dark hover:opacity-70 lg:px-3"
                                 >
                                   {submenuItem.title}
                                 </Link>
@@ -149,7 +142,7 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-                <Link className="ease-in-up rounded-md bg-transparent py-3 px-8 text-white transition duration-300 md:block md:px-9 lg:px-6 xl:px-9 border-[1px] border-white" href="#">
+                <Link className="ease-in-up rounded-md bg-primary text-black py-3 px-8 transition duration-300 md:block md:px-9 lg:px-6 xl:px-9" href="#">
                   Get in touch
                 </Link>
               </div>
