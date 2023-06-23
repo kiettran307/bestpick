@@ -5,6 +5,7 @@ import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import { Products } from "@/components/Products";
+import { UsefulFeatures } from "@/components/UsefulFeature";
 // import { UsefulFeatures } from "@/components/UsefulFeature";
 import { Inter } from "@next/font/google";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Features />
       <Brands />
       <Products />
+      <UsefulFeatures />
       {/* <Testimonials /> */}
       {/* <UsefulFeatures/> */}
       {/* <Testimonials /> */}
