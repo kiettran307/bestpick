@@ -4,6 +4,7 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./shared/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: "class",
   theme: {
@@ -24,6 +25,7 @@ module.exports = {
       blue: "#E7F0FF",
       "blue-1": "#0066FF",
       "body-color": "#959CB1",
+      accent:"#344051",
     },
     screens: {
       xs: "450px",
