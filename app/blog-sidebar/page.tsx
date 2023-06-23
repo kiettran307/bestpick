@@ -1,7 +1,7 @@
 import RelatedPost from "@/components/Blog/RelatedPost";
 import SharePost from "@/components/Blog/SharePost";
 import TagButton from "@/components/Blog/TagButton";
-import NewsLatterBox from "@/components/Contact/FormContact";
+import {FormContact} from "@/components/Contact/FormContact";
 import Image from "next/image";
 
 const BlogSidebarPage = () => {
@@ -9,18 +9,18 @@ const BlogSidebarPage = () => {
     <>
       <section className="overflow-hidden pt-[180px] pb-[120px]">
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
+          <div className="flex flex-wrap -mx-4">
             <div className="w-full px-4 lg:w-8/12">
               <div>
                 <h2 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
                   10 amazing sites to download stock photos & digital assets for
                   free
                 </h2>
-                <div className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
+                <div className="flex flex-wrap items-center justify-between pb-4 mb-10 border-b border-body-color border-opacity-10 dark:border-white dark:border-opacity-10">
                   <div className="flex flex-wrap items-center">
-                    <div className="mr-10 mb-5 flex items-center">
+                    <div className="flex items-center mb-5 mr-10">
                       <div className="mr-4">
-                        <div className="relative h-10 w-10 overflow-hidden rounded-full">
+                        <div className="relative w-10 h-10 overflow-hidden rounded-full">
                           <Image
                             src="/images/blog/author-02.png"
                             alt="author"
@@ -35,8 +35,8 @@ const BlogSidebarPage = () => {
                         </h4>
                       </div>
                     </div>
-                    <div className="mb-5 flex items-center">
-                      <p className="mr-5 flex items-center text-base font-medium text-body-color">
+                    <div className="flex items-center mb-5">
+                      <p className="flex items-center mr-5 text-base font-medium text-body-color">
                         <span className="mr-3">
                           <svg
                             width="15"
@@ -57,7 +57,7 @@ const BlogSidebarPage = () => {
                         </span>
                         12 Jan 2024
                       </p>
-                      <p className="mr-5 flex items-center text-base font-medium text-body-color">
+                      <p className="flex items-center mr-5 text-base font-medium text-body-color">
                         <span className="mr-3">
                           <svg
                             width="18"
@@ -91,7 +91,7 @@ const BlogSidebarPage = () => {
                   <div className="mb-5">
                     <a
                       href="#0"
-                      className="inline-flex items-center justify-center rounded-full bg-primary py-2 px-4 text-sm font-semibold text-white"
+                      className="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white rounded-full bg-primary"
                     >
                       Design
                     </a>
@@ -103,13 +103,13 @@ const BlogSidebarPage = () => {
                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                     occaecat cupidatat.
                   </p>
-                  <div className="mb-10 w-full overflow-hidden rounded">
+                  <div className="w-full mb-10 overflow-hidden rounded">
                     <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
                       <Image
                         src="/images/blog/blog-details-01.jpg"
                         alt="image"
                         fill
-                        className="h-full w-full object-cover object-center"
+                        className="object-cover object-center w-full h-full"
                       />
                     </div>
                   </div>
@@ -128,7 +128,7 @@ const BlogSidebarPage = () => {
                   </p>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     Semper auctor neque vitae tempus quam pellentesque nec.
-                    <span className="text-primary underline dark:text-white">
+                    <span className="underline text-primary dark:text-white">
                       {" "}
                       Amet dictum sit amet justo{" "}
                     </span>
@@ -136,7 +136,7 @@ const BlogSidebarPage = () => {
                     aliquet porttitor. Odio pellentesque diam volutpat commodo
                     sed.
                   </p>
-                  <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
+                  <h3 className="mb-10 font-bold leading-tight text-black font-xl dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
                     Digital marketplace for Ui/Ux designers.
                   </h3>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
@@ -144,7 +144,7 @@ const BlogSidebarPage = () => {
                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                     mattis vulputate cupidatat.
                   </p>
-                  <ul className="mb-10 list-inside list-disc text-body-color">
+                  <ul className="mb-10 list-disc list-inside text-body-color">
                     <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
                       Consectetur adipiscing elit in voluptate velit.
                     </li>
@@ -158,8 +158,8 @@ const BlogSidebarPage = () => {
                       Ligula ullamcorper malesuada proin
                     </li>
                   </ul>
-                  <div className="relative z-10 mb-10 overflow-hidden rounded-md bg-primary bg-opacity-10 p-8 md:p-9 lg:p-8 xl:p-9">
-                    <p className="text-center text-base font-medium italic text-body-color">
+                  <div className="relative z-10 p-8 mb-10 overflow-hidden rounded-md bg-primary bg-opacity-10 md:p-9 lg:p-8 xl:p-9">
+                    <p className="text-base italic font-medium text-center text-body-color">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod incididunt utionals labore et dolore magna
                       aliqua. Quis lobortis scelerisque fermentum, The Neque ut
@@ -335,12 +335,12 @@ const BlogSidebarPage = () => {
               </div>
             </div>
             <div className="w-full px-4 lg:w-4/12">
-              <div className="mt-12 mb-10 rounded-md bg-primary bg-opacity-5 p-6 dark:bg-opacity-5 lg:mt-0">
+              <div className="p-6 mt-12 mb-10 rounded-md bg-primary bg-opacity-5 dark:bg-opacity-5 lg:mt-0">
                 <form className="flex items-center justify-between">
                   <input
                     type="text"
                     placeholder="Search here..."
-                    className="palceholder-body-color mr-5 w-full rounded-md border border-transparent py-3 px-5 text-base font-medium text-body-color outline-none focus:border-primary dark:bg-white dark:bg-opacity-10"
+                    className="w-full px-5 py-3 mr-5 text-base font-medium border border-transparent rounded-md outline-none palceholder-body-color text-body-color focus:border-primary dark:bg-white dark:bg-opacity-10"
                   />
                   <button className="flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-md bg-primary text-white">
                     <svg
@@ -359,11 +359,11 @@ const BlogSidebarPage = () => {
                 </form>
               </div>
               <div className="mb-10 rounded-md bg-primary bg-opacity-5 dark:bg-opacity-10">
-                <h3 className="border-b border-body-color border-opacity-10 py-4 px-8 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
+                <h3 className="px-8 py-4 text-lg font-semibold text-black border-b border-body-color border-opacity-10 dark:border-white dark:border-opacity-10 dark:text-white">
                   Related Posts
                 </h3>
                 <ul className="p-8">
-                  <li className="mb-6 border-b border-body-color border-opacity-10 pb-6 dark:border-white dark:border-opacity-10">
+                  <li className="pb-6 mb-6 border-b border-body-color border-opacity-10 dark:border-white dark:border-opacity-10">
                     <RelatedPost
                       title="Best way to boost your online sales."
                       image="/images/blog/post-01.jpg"
@@ -371,7 +371,7 @@ const BlogSidebarPage = () => {
                       date="12 Feb 2025"
                     />
                   </li>
-                  <li className="mb-6 border-b border-body-color border-opacity-10 pb-6 dark:border-white dark:border-opacity-10">
+                  <li className="pb-6 mb-6 border-b border-body-color border-opacity-10 dark:border-white dark:border-opacity-10">
                     <RelatedPost
                       title="50 Best web design tips & tricks that will help you."
                       image="/images/blog/post-02.jpg"
@@ -390,14 +390,14 @@ const BlogSidebarPage = () => {
                 </ul>
               </div>
               <div className="mb-10 rounded-md bg-primary bg-opacity-5 dark:bg-opacity-10">
-                <h3 className="border-b border-body-color border-opacity-10 py-4 px-8 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
+                <h3 className="px-8 py-4 text-lg font-semibold text-black border-b border-body-color border-opacity-10 dark:border-white dark:border-opacity-10 dark:text-white">
                   Popular Category
                 </h3>
-                <ul className="py-6 px-8">
+                <ul className="px-8 py-6">
                   <li>
                     <a
                       href="#0"
-                      className="mb-3 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="inline-block mb-3 text-base font-medium text-body-color hover:text-primary"
                     >
                       Tailwind Templates
                     </a>
@@ -405,7 +405,7 @@ const BlogSidebarPage = () => {
                   <li>
                     <a
                       href="#0"
-                      className="mb-3 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="inline-block mb-3 text-base font-medium text-body-color hover:text-primary"
                     >
                       Landing page
                     </a>
@@ -413,7 +413,7 @@ const BlogSidebarPage = () => {
                   <li>
                     <a
                       href="#0"
-                      className="mb-3 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="inline-block mb-3 text-base font-medium text-body-color hover:text-primary"
                     >
                       Startup
                     </a>
@@ -421,7 +421,7 @@ const BlogSidebarPage = () => {
                   <li>
                     <a
                       href="#0"
-                      className="mb-3 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="inline-block mb-3 text-base font-medium text-body-color hover:text-primary"
                     >
                       Business
                     </a>
@@ -429,7 +429,7 @@ const BlogSidebarPage = () => {
                   <li>
                     <a
                       href="#0"
-                      className="mb-3 inline-block text-base font-medium text-body-color hover:text-primary"
+                      className="inline-block mb-3 text-base font-medium text-body-color hover:text-primary"
                     >
                       Multipurpose
                     </a>
@@ -437,10 +437,10 @@ const BlogSidebarPage = () => {
                 </ul>
               </div>
               <div className="mb-10 rounded-md bg-primary bg-opacity-5 dark:bg-opacity-10">
-                <h3 className="border-b border-body-color border-opacity-10 py-4 px-8 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
+                <h3 className="px-8 py-4 text-lg font-semibold text-black border-b border-body-color border-opacity-10 dark:border-white dark:border-opacity-10 dark:text-white">
                   Popular Tags
                 </h3>
-                <div className="flex flex-wrap py-6 px-8">
+                <div className="flex flex-wrap px-8 py-6">
                   <TagButton text="Themes" />
                   <TagButton text="UI Kit" />
                   <TagButton text="Tailwind" />
@@ -449,7 +449,7 @@ const BlogSidebarPage = () => {
                 </div>
               </div>
 
-              <NewsLatterBox />
+              {/* <NewsLatterBox /> */}
             </div>
           </div>
         </div>
