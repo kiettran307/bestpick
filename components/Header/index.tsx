@@ -45,7 +45,7 @@ const Header = () => {
       >
         <div className="container w-[1216px]">
           <div className="relative -mx-4 flex items-center justify-between ">
-            <div className="w-60 max-w-full px-4 xl:mr-12">
+            <div className="w-60 max-w-full pr-4 xl:mr-12">
               <Link
                 href="/"
                 className={`header-logo block w-full ${
@@ -61,8 +61,8 @@ const Header = () => {
                 />
               </Link>
             </div>
-            <div className="flex w-full items-center justify-between px-4">
-              <div>
+            <div className="flex w-full items-center justify-end px-4">
+              <div className="mr-6">
                 <button
                   onClick={navbarToggleHandler}
                   id="navbarToggler"
@@ -143,7 +143,7 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <Link className="ease-in-up rounded-md bg-primary text-black py-3 px-8 transition duration-300 md:block md:px-9 lg:px-6 xl:px-9" href="#">
-                  Get in touch
+                  Our Brands
                 </Link>
               </div>
             </div>
