@@ -37,15 +37,15 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header top-0 left-0 z-40 flex w-full items-center bg-white ${
+        className={`header left-0 top-0 z-40 flex w-full items-center bg-white ${
           sticky
             ? "!fixed !z-[9999] shadow-sticky backdrop-blur-sm !transition"
             : "absolute"
         }`}
       >
         <div className="container w-[1216px]">
-          <div className="relative -mx-4 flex items-center justify-between ">
-            <div className="w-60 max-w-full pr-4 xl:mr-12">
+          <div className="relative flex items-center justify-between -mx-4 ">
+            <div className="max-w-full pr-4 w-60 xl:mr-12">
               <Link
                 href="/"
                 className={`header-logo block w-full ${
@@ -61,7 +61,7 @@ const Header = () => {
                 />
               </Link>
             </div>
-            <div className="flex w-full items-center justify-end px-4">
+            <div className="flex items-center justify-end w-full px-4">
               <div className="mr-6">
                 <button
                   onClick={navbarToggleHandler}
@@ -87,7 +87,7 @@ const Header = () => {
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white py-4 px-6 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
+                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
                     navbarOpen
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
@@ -95,11 +95,11 @@ const Header = () => {
                 >
                   <ul className="block lg:flex lg:space-x-12">
                     {menuData.map((menuItem, index) => (
-                      <li key={menuItem.id} className="group relative">
+                      <li key={menuItem.id} className="relative group">
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-dark group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
+                            className={`flex py-2 text-dark group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6`}
                           >
                             {menuItem.title}
                           </Link>
@@ -107,7 +107,7 @@ const Header = () => {
                           <>
                             <a
                               onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center justify-between py-2 text-dark group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:py-6 lg:px-0"
+                              className="flex items-center justify-between py-2 cursor-pointer text-dark group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                             >
                               {menuItem.title}
                               <span className="pl-3">
@@ -120,7 +120,7 @@ const Header = () => {
                               </span>
                             </a>
                             <div
-                              className={`submenu relative top-full left-0 rounded-md bg-white transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
+                              className={`submenu relative left-0 top-full rounded-md bg-white transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
                                 openIndex === index ? "block" : "hidden"
                               }`}
                             >
@@ -142,7 +142,10 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-                <Link className="ease-in-up rounded-md bg-primary text-black py-3 px-8 transition duration-300 md:block md:px-9 lg:px-6 xl:px-9" href="#">
+                <Link
+                  className="px-8 py-3 text-black transition duration-300 rounded-md ease-in-up bg-primary md:block md:px-9 lg:px-6 xl:px-9"
+                  href="/our-brands"
+                >
                   Our Brands
                 </Link>
               </div>
