@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function SingleProduct({ product }: { product: Product }): JSX.Element {
   return (
-    <div className="flex w-full max-w-[384px] flex-col justify-center">
+    <div className="flex w-full max-w-[384px] flex-col justify-start">
       <div>
         <Image
           src={product.image}
