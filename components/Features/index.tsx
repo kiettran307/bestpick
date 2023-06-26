@@ -7,7 +7,7 @@ const Features = () => {
   return (
     <>
       <section id="features" className="py-16 md:py-20 lg:py-28">
-        <div className="container w-[1216px] lg:w-full sm:w-full md:w-full">
+        <div className="container lg:w-full sm:w-full md:w-full">
           <SectionTitle
             title="Our business"
             paragraph="Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit"
