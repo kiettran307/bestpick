@@ -15,7 +15,7 @@ const Footer = () => {
       <footer className="mt-8 lg:mt-16" data-wow-delay=".1s">
         <div className="container border-b border-b-[#CED2DA]">
           <div className="flex flex-col -mx-4 lg:flex-row">
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-4/12">
+            <div className="w-full pr-4 md:w-1/2 lg:w-4/12 xl:w-4/12">
               <div className="mb-12 max-w-[316px] lg:mb-16">
                 <Link href="/" className="inline-block mb-6">
                   <Image
