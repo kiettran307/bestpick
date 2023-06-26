@@ -4,3 +4,8 @@ export type Feature = {
   title: string;
   paragraph: string;
 };
+export type ImageViewType = {
+  imageUrl?: string;
+  width?: number;
+  height?: number;
+}

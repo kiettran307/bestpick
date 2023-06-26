@@ -1,8 +1,32 @@
-import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
+import ImagesView from "./ImagesView";
 import SingleFeature from "./SingleFeature";
 import featuresData from "./featuresData";
+import { ImageViewType } from '@/types/feature'
 
+
+const imagesViewData: ImageViewType[] = [
+  {
+    imageUrl: '/images/features/feature_1.png',
+    width: 280,
+    height: 332
+  },
+  {
+    imageUrl: '/images/features/feature_2.png',
+    width: 280,
+    height: 198
+  },
+  {
+    imageUrl: '/images/features/feature_3.png',
+    width: 280,
+    height: 332
+  },
+  {
+    imageUrl: '/images/features/feature_4.png',
+    width: 280,
+    height: 198
+  }
+]
 const Features = () => {
   return (
     <>
@@ -21,34 +45,7 @@ const Features = () => {
               ))}
             </div>
             <div className="flex w-[592px] gap-8">
-              <div className="flex flex-col gap-8">
-                <Image
-                  src="/images/features/feature_1.png"
-                  alt="png"
-                  width={280}
-                  height={332}
-                />
-                <Image
-                  src="/images/features/feature_2.png"
-                  alt="png"
-                  width={280}
-                  height={198}
-                />
-              </div>
-              <div className="flex flex-col gap-8">
-                <Image
-                  src="/images/features/feature_3.png"
-                  alt="png"
-                  width={280}
-                  height={332}
-                />
-                <Image
-                  src="/images/features/feature_4.png"
-                  alt="png"
-                  width={280}
-                  height={198}
-                />
-              </div>
+              <ImagesView imgViewData={imagesViewData} />
             </div>
           </div>
         </div>
