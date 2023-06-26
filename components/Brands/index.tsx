@@ -46,10 +46,10 @@ const Brands = () => {
     <section className="pt-16">
       <div className="">
         <div className="flex flex-wrap">
-          <div className="flex h-[448px] w-full items-center justify-center bg-primary-light flex-col">
+          <div className="flex w-full items-center justify-center bg-primary-light flex-col py-10">
             <div className="mb-16 text-4xl text-black font-bold">Features On</div>
             <div
-              className="wow fadeInUp flex w-[1216px] items-center justify-center"
+              className="wow fadeInUp flex w-full max-w-[1216px] items-center justify-center lg:flex md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 gap-10"
               data-wow-delay=".1s
               "
             >
@@ -70,7 +70,7 @@ const SingleBrand = ({ brand }: { brand: NewBrand }) => {
   const { href, image, name, width, height } = brand;
 
   return (
-    <div className="mx-3 flex w-full items-center justify-center h-[140px]">
+    <div className="mx-3 flex w-full items-center justify-center h-[140px] lg:mx-5 md:mx-auto lg:w-full sm:mx-auto md:w-fit sm:w-fit">
       <a
         href={href}
         target="_blank"

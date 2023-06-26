@@ -7,14 +7,14 @@ const Features = () => {
   return (
     <>
       <section id="features" className="py-16 md:py-20 lg:py-28">
-        <div className="container w-[1216px]">
+        <div className="container w-[1216px] lg:w-full sm:w-full md:w-full">
           <SectionTitle
             title="Our business"
             paragraph="Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit"
             center
           />
 
-          <div className="flex w-full items-center justify-center gap-8">
+          <div className="flex w-full items-center justify-center gap-8 lg:flex-row md:flex-col sm:flex-col">
             <div>
               {featuresData.map((feature) => (
                 <SingleFeature key={feature.id} feature={feature} />
