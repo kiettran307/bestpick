@@ -1,16 +1,22 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import BrandDescription from "@/components/About/BrandDescription";
+import CareerComponent from "@/components/About/Career";
+import Vision from "@/components/About/Vision";
+import BannerComponent from "@/components/Common/Banner";
+import { Banner } from "@/types/banner";
 
 const AboutPage = () => {
+  const bannerProps: Banner = {
+    imgBg: "./images/banner/banner_image.svg",
+    title: "ABOUT US",
+    description: "Our brands: Best pick, Roji Monster Ice-cream, Baitong Hotel and Resort",
+    imgUrl: "/images/banner/image_cover.png"
+  }
   return (
     <>
-      <Breadcrumb
-        pageName="About Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
-      />
-      <AboutSectionOne />
-      <AboutSectionTwo />
+      <BannerComponent banner={bannerProps}/>
+      <Vision />
+      <BrandDescription />
+      <CareerComponent />
     </>
   );
 };
