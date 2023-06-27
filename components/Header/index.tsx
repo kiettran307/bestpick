@@ -105,7 +105,7 @@ const Header = () => {
                           </Link>
                         ) : (
                           <>
-                            <a
+                            <div
                               onClick={() => handleSubmenu(index)}
                               className="flex items-center justify-between py-2 cursor-pointer text-dark group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                             >
@@ -118,7 +118,7 @@ const Header = () => {
                                   />
                                 </svg>
                               </span>
-                            </a>
+                            </div>
                             <div
                               className={`submenu relative left-0 top-full rounded-md bg-white transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
                                 openIndex === index ? "block" : "hidden"
@@ -143,9 +143,9 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <Link
-                  className="py-3 text-black w-[100px] md:w-[120px] flex justify-center transition duration-300 rounded-md ease-in-up bg-primary px-1 md:px-3"
+                  className="ease-in-up flex w-[100px] justify-center rounded-2xl bg-primary px-1 py-3 text-black transition duration-300 md:w-[120px] lg:w-auto lg:px-6 lg:py-3"
                   href="/our-brands"
-              >
+                >
                   Our Brands
                 </Link>
               </div>
