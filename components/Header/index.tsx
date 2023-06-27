@@ -143,7 +143,7 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <Link
-                  className="ease-in-up flex w-[100px] justify-center rounded-2xl bg-primary px-1 py-3 text-black transition duration-300 md:w-[120px] lg:w-auto lg:px-6 lg:py-3"
+                  className="ease-in-up flex w-[100px] justify-center rounded-2xl bg-primary px-1 py-2 text-black transition duration-300 md:w-[120px] lg:w-auto lg:px-6 lg:py-3"
                   href="/our-brands"
                 >
                   Our Brands
