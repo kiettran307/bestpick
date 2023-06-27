@@ -3,14 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import menuData from "./menuData";
-
+import { usePathname } from "next/navigation"
 const Header = () => {
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
     setNavbarOpen(!navbarOpen);
   };
-
+  const pathname = usePathname()
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
   const handleStickyNavbar = () => {
@@ -99,7 +99,8 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-dark group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6`}
+                            className={`flex py-2 text-dark group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${pathname === menuItem.path ? 'text-yellow-1' : 'text-dark'}`}
+                            
                           >
                             {menuItem.title}
                           </Link>
