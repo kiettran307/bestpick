@@ -49,7 +49,7 @@ const Brands = () => {
           <div className="flex w-full items-center justify-center bg-primary-light flex-col py-10">
             <div className="mb-16 text-4xl text-black font-bold">Features On</div>
             <div
-              className="wow fadeInUp flex w-full max-w-[1216px] items-center justify-center lg:flex md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 gap-10"
+              className="wow fadeInUp grid w-full max-w-[1216px] items-center justify-center gap-10 lg:flex md:grid-cols-2 sm:grid-cols-2 grid-cols-1"
               data-wow-delay=".1s
               "
             >
@@ -75,7 +75,7 @@ const SingleBrand = ({ brand }: { brand: NewBrand }) => {
         href={href}
         target="_blank"
         rel="nofollow noreferrer"
-        className="relative w-full"
+        className="relative w-full flex justify-center"
       >
         <Image src={image} alt={name} width={width} height={height} />
       </a>

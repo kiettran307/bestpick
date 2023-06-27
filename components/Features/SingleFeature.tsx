@@ -3,7 +3,7 @@ import { Feature } from "@/types/feature";
 const SingleFeature = ({ feature }: { feature: Feature }) => {
   const { icon, title, paragraph } = feature;
   return (
-    <div className="wow fadeInUp w-[544px] pl-0 pr-6 py-6" data-wow-delay=".15s">
+    <div className="wow fadeInUp max-w-[544px] pl-0 pr-6 py-6 xs:pr-0" data-wow-delay=".15s">
       <div className="mb-4 flex h-[40px] w-[40px] items-center justify-center rounded-md bg-blue">
         {icon}
       </div>

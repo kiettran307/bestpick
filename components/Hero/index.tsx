@@ -8,10 +8,10 @@ const Hero = () => {
         className="relative z-10 overflow-hidden bg-primary-light pb-16 pt-[120px]"
       >
         <div className="container max-w-[1216px] w-full px-8">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-33 flex items-center gap-x-8 lg:flex-row md:flex-col sm:flex-col">
+          <div className="flex flex-wrap">
+            <div className="w-full px-33 flex flex-col items-center gap-x-8 lg:flex-row">
               <div
-                className="wow fadeInUp w-1/2 max-w-[800px] lg:max-w-1/3 md:w-full sm:w-full"
+                className="wow fadeInUp w-full max-w-full lg:w-1/2 lg:max-w-1/2"
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-5 text-5xl border-b-4 w-fit p-b-1.5 border-yellow-1 font-bold leading-tight text-yellow-1 d sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
@@ -29,10 +29,10 @@ const Hero = () => {
                   </Link>
                 </div>
               </div>
-              <div className="wow fadeInUp w-1/2 lg:max-w-2/3 flex justify-center items-center md:mt-5 sm:mt-5 md:w-full sm:w-full">
-                <div className="relative w-[463px] h-[662px] ml-10">
-                  <div className="wow fadeInUp absolute top-9 left-10 w-[463px] h-[662px] border bg-primary border-primary rounded-2xl"></div>
-                  <div className=" wow fadeInUp w-[463px] h-[662px]"><Image src={"/images/banner/ice-cream.png"} fill alt="img" /></div>
+              <div className="wow fadeInUp w-1/2 lg:max-w-2/3 flex justify-center ml-0 items-between md:mt-5 sm:mt-5 md:w-full sm:w-full xs:w-full mt-5 lg:mt-0">
+                <div className="relative w-[270px] h-[380px] lg:w-[463px] lg:h-[662px] md:w-[463px] md:h-[662px] sm:w-[350px] sm:h-[470px] xs:w-[270px] xs:h-[380px] -ml-10 md:ml-10">
+                  <div className="wow fadeInUp absolute top-9 left-10 w-[270px] h-[380px] lg:w-[463px] lg:h-[662px] md:w-[463px] md:h-[662px] sm:w-[350px] sm:h-[470px] xs:w-[270px] xs:h-[380px] border bg-primary border-primary rounded-2xl"></div>
+                  <div className=" wow fadeInUp w-[270px] h-[380px] lg:w-[463px] lg:h-[662px] md:w-[463px] md:h-[662px] sm:w-[350px] sm:h-[470px] xs:w-[270px] xs:h-[380px]"><Image src={"/images/banner/ice-cream.png"} fill alt="img" /></div>
                 </div>
               </div>
             </div>
