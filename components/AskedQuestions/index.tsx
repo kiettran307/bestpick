@@ -4,10 +4,13 @@ import { FAQAccordion } from "./FAQAccordion";
 import Image from "next/image";
 import { Button } from "@/shared/utils/form/Button";
 import { MdOutlineEmail } from "react-icons/md";
+import { ContactUsBox } from "./ContactUsBox";
 
-type Props = {};
+type AskQuestionProps = {
+  isHasContactBox?:boolean
+};
 
-export function AskedQuestions({}: Props) {
+export function AskedQuestions({isHasContactBox = true}: AskQuestionProps) {
   return (
     <section className="py-10 md:py-12 lg:py-20">
       <div className="container flex flex-col items-center ">
@@ -29,20 +32,12 @@ export function AskedQuestions({}: Props) {
           </p>
         </div>
         <FAQAccordion />
-        <div className="flex w-full text-center flex-col items-center justify-center gap-8 rounded-lg bg-primary-light p-8 lg:max-w-[800px] mt-10">
-          <div className="text-xl font-semibold">Still have a questions?</div>
-          <p className="w-2/3 text-base text-accent">
-            We're sorry we couldn't provide you with the information you were
-            looking for. Please contact us and we'll be happy to help.{" "}
-          </p>
-          <Button
-            text="Contact us"
-            className={"bg-primary rounded-xl"}
-            icon={<MdOutlineEmail />}
-            iconPosition="start"
-            iconClassName={"mr-2"}
-          />
-        </div>
+        {
+          isHasContactBox && (
+
+            <ContactUsBox/>
+          )
+        }
       </div>
     </section>
   );

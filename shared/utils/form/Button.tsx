@@ -68,6 +68,7 @@ export function Button({
         <Link
           href={href}
           ref={props.innerRef as MutableRefObject<HTMLAnchorElement>}
+          target="_blank"
         >
           <button
             className={`${buttonStyle} ${className}`}

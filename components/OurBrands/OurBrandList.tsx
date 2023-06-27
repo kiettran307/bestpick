@@ -31,7 +31,8 @@ function OurBrandItem({ brand }: { brand: BrandType }) {
 
       <Button
         text={brand?.active ? "Explore more" : "Coming soon"}
-        href="/"
+        href={brand?.path}
+        
         className={`rounded-xl ${
           brand?.active ? "bg-primary" : "bg-[#EAE9E9] text-[#969695]"
         } `}
@@ -44,6 +45,7 @@ export type BrandType = {
   title: string;
   image: string;
   active: boolean;
+  path?:string;
 };
 export const BRAND_LIST_DATA: BrandType[] = [
   {
@@ -51,23 +53,27 @@ export const BRAND_LIST_DATA: BrandType[] = [
     image: "/images/our-brands/img-brand-1.png",
     title: "BaiTong Hotel & Resort",
     active: true,
+    path:"https://www.baitonghotel.asia/",
   },
   {
     id: 2,
     image: "/images/our-brands/img-brand-2.png",
     title: "SOOKDAL Korean Restaurant",
     active: true,
+    path:"https://sookdal.com/",
   },
   {
     id: 3,
     image: "/images/our-brands/img-brand-3.png",
     title: "Melo Restaurant",
     active: false,
+    path:"#",
   },
   {
     id: 4,
     image: "/images/our-brands/img-brand-4.png",
     title: "RoJi Monster Ice Cream",
     active: false,
+    path:"#",
   },
 ];
