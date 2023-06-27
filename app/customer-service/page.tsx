@@ -18,7 +18,7 @@ export default function CustomerServicePage({}: Props) {
   return (
     <>
       <BannerComponent banner={bannerProps} />
-      <section className="container my-10  rounded-[32px] bg-[#FFFBCE] p-10 lg:my-20  lg:p-16 ">
+      <section className="container my-10  rounded-[32px] bg-[#FFFBCE] p-8 lg:my-20  lg:p-16 ">
         <div className="lg:w-1/2">
           <h3 className="text-xl font-semibold leading-10 text-black lg:text-[32px]">
             Enter your request and we would love to hear from you
@@ -28,11 +28,11 @@ export default function CustomerServicePage({}: Props) {
             tenetur hic eveniet repellendus nostrum minus id?
           </p>
         </div>
-        <div className="flex flex-row items-center justify-between gap-14 ">
+        <div className="flex flex-col items-center justify-between lg:flex-row gap-14 ">
           <div className="w-full lg:w-2/3">
             <CustomerServiceRequest />
           </div>
-          <div className="flex-1">
+          <div className="w-full lg:flex-1">
             <CustomerServiceMap />
           </div>
         </div>
