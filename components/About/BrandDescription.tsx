@@ -28,8 +28,8 @@ const imagesViewData: ImageViewType[] = [
 const BrandDescription = (): JSX.Element => {
   return (
     <div className="relative z-10 overflow-hidden bg-primary-light pb-16 pt-[80px]">
-      <div className="container w-full max-w-[1216px] bg-primary-light px-8 gap-14 flex lg:flex-row md:flex-col sm:flex-col lg:justify-start md:items-center sm:items-center">
-        <div className="flex max-w-[570px] flex-col gap-6">
+      <div className="container flex flex-col items-center w-full px-8 bg-primary-light gap-14 lg:flex-row md:flex-col lg:justify-start md:justify-center">
+        <div className="flex lg:max-w-[570px] flex-col gap-6">
           <div>
             <Image
               src="/images/brands/baitong.png"
@@ -54,10 +54,10 @@ const BrandDescription = (): JSX.Element => {
           </div>
           <p className="text-lg leading-relaxed text-black">Prepare to be inspired. At Baitong hotel, quintessential design elements meet you around each corner and down every corridor. Our unique architecture with lush gardens, minimal ponds, cascading Jacuzzi, striking staircases, glass-bottomed pool and walkway, and other bold features will enhance your stay.</p>
           <div>
-            <button className="rounded-md bg-primary px-8 py-3 text-base text-black font-bold duration-300 ease-in-out hover:bg-primary/80">Visit Website</button>
+            <button className="px-8 py-3 text-base font-bold text-black duration-300 ease-in-out rounded-md bg-primary hover:bg-primary/80">Visit Website</button>
           </div>
         </div>
-        <div className="flex w-[592px] gap-8">
+        <div className="flex w-full lg:w-[592px] gap-8">
           <ImagesView imgViewData={imagesViewData} />
         </div>
       </div>

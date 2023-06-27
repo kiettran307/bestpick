@@ -3,12 +3,12 @@ import Image from "next/image";
 
 const BannerComponent = ({ banner }: { banner: Banner }) => {
   return (
-    <div className="relative z-10 overflow-hidden bg-primary-light pb-16 pt-[120px]">
-      <div className="container w-full max-w-[1216px] bg-primary-light px-8 lg:flex-row md:flex-col sm:flex-col">
-        <div className="-mx-4 flex flex-wrap">
-          <div className="px-33 flex w-full items-center gap-x-8 sm:flex-col md:flex-col lg:flex-row">
+    <div className=" bg-primary-light pb-8 lg:pb-16 pt-[100px]">
+      <div className="container w-full px-8 bg-primary-light lg:flex-row md:flex-col sm:flex-col">
+        <div className="flex flex-wrap -mx-4">
+          <div className="flex flex-col items-center w-full px-33 gap-x-8 lg:flex-row">
             <div
-              className="wow fadeInUp flex h-[385px] max-w-[728px] flex-col justify-center sm:w-full md:w-full"
+              className="wow fadeInUp flex lg:h-[385px] lg:max-w-[728px] flex-col justify-center sm:w-full md:w-full"
               data-wow-delay=".2s"
               style={{
                 backgroundImage: `url(${banner.imgBg})`,
@@ -22,18 +22,13 @@ const BannerComponent = ({ banner }: { banner: Banner }) => {
                 {banner.description}
               </p>
             </div>
-            <div className="wow fadeInUp flex w-1/2 items-center justify-center sm:mt-5 sm:w-full md:mt-5 md:w-full lg:w-2/3">
-              <div className="flex items-center justify-center">
-                <Image
-                  src={banner.imgUrl}
-                  alt="aaa"
-                  style={{ width: "100%", height: "auto" }}
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                />
-              </div>
-            </div>
+            <Image
+                src={banner?.imgUrl}
+                className='rounded-lg'
+                alt='banner our brand'
+                width={488}
+                height={318}
+            />
           </div>
         </div>
       </div>
