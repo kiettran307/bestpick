@@ -66,7 +66,7 @@ const CareerComponent = (): JSX.Element => {
           paragraph="Be a Part of Our Company"
           center
         />
-        <div className="flex gap-20 rounded-xl bg-primary-light justify-center px-16 py-20 lg:flex-row md:flex-col sm:flex-col md:items-center sm:items-center">
+        <div className="flex flex-col items-center justify-center gap-10 px-8 py-10 lg:px-16 lg:py-20 lg:gap-20 rounded-xl bg-primary-light lg:flex-row md:flex-col">
           <div className="flex flex-col gap-6">
             {Jobs.map((item, i) => {
               return (
@@ -79,7 +79,7 @@ const CareerComponent = (): JSX.Element => {
               );
             })}
             <div>
-              <button className="rounded-md bg-primary px-8 py-3 text-base font-bold text-black duration-300 ease-in-out hover:bg-primary/80">
+              <button className="px-8 py-3 text-base font-bold text-black duration-300 ease-in-out rounded-md bg-primary hover:bg-primary/80">
                 Apply now
               </button>
             </div>
@@ -92,14 +92,14 @@ const CareerComponent = (): JSX.Element => {
                     <Image
                       src={item.img}
                       alt="author"
-                      style={{ width: "100%", height: "auto" }}
-                      width={0}
-                      height={0}
-                      sizes="100vw"
+                      style={{ maxWidth: "100%", height: "auto" }}
+                      width={100}
+                      height={100}
+                      
                     />
                   </div>
                   <div className="text-lg text-blue-1">{item.name}</div>
-                  <div className="text-xl">{item.position}</div>
+                  <div className="text-sm lg:text-xl">{item.position}</div>
                 </div>
               );
             })}
@@ -107,11 +107,11 @@ const CareerComponent = (): JSX.Element => {
           <div className="flex items-center justify-center">
             <Image
               src="/images/about/career_img.png"
-              alt="aaa"
-              style={{ width: "100%", height: "auto" }}
-              width={0}
-              height={0}
-              sizes="100vw"
+              alt="image career"
+              style={{ maxWidth: "100%", height: "auto" }}
+              width={258}
+              height={258}
+              
             />
           </div>
         </div>

@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="container border-b border-b-[#CED2DA]">
           <div className="flex flex-col -mx-4 lg:flex-row">
             <div className="w-full pr-4 md:w-1/2 lg:w-4/12 xl:w-4/12">
-              <div className="mb-12 pl-4 max-w-[316px] md:pl-0 lg:mb-16">
+              <div className="mb-12 pl-4 w-full lg:max-w-[316px] md:pl-0 lg:mb-16">
                 <Link href="/" className="inline-block mb-6">
                   <Image
                     src="/images/logo-footer.png"
@@ -70,7 +70,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="grid flex-1 grid-cols-1 gap-4 p-4 md:grid-cols-2 xl:grid-cols-4 lg:gap-8">
+            <div className="grid flex-1 grid-cols-1 gap-4 p-4 md:grid-cols-2 xl:grid-cols-4 lg:gap-6">
               {FOOTER_NAV.map((item, index) => (
                 <div className="mb-4 lg:mb-16" key={index}>
                   <h2 className="mb-5 text-lg font-bold text-black ">
@@ -81,7 +81,7 @@ const Footer = () => {
                       <li key={index}>
                         <Link
                           href={nav.path || "/"}
-                          className="flex flex-row items-center gap-2 mb-4 text-base font-light text-accent hover:text-primary"
+                          className="flex flex-row items-center gap-1 mb-4 text-base font-light text-accent hover:text-primary"
                         >
                            {nav.icon &&  <i>{nav.icon}</i>}
                            <span>
