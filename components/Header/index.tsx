@@ -43,8 +43,8 @@ const Header = () => {
             : "absolute"
         }`}
       >
-        <div className="container w-[1216px]">
-          <div className="relative flex items-center justify-between -mx-4 ">
+        <div className="container w-full max-w-[1216px]">
+          <div className="relative flex items-center justify-between ">
             <div className="max-w-full pr-4 w-60 xl:mr-12">
               <Link
                 href="/"
@@ -143,9 +143,9 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <Link
-                  className="px-8 py-3 text-black transition duration-300 rounded-md ease-in-up bg-primary md:block md:px-9 lg:px-6 xl:px-9"
+                  className="py-3 text-black w-[100px] md:w-[120px] flex justify-center transition duration-300 rounded-md ease-in-up bg-primary px-1 md:px-3"
                   href="/our-brands"
-                >
+              >
                   Our Brands
                 </Link>
               </div>
