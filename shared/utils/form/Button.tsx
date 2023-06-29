@@ -19,6 +19,7 @@ type ButtonPropsType = {
   stopPropagation?: boolean;
   preventDefault?: boolean;
   innerRef?: MutableRefObject<HTMLAnchorElement | HTMLButtonElement>;
+  disabled?: boolean;
   onClick?: (e?: MouseEvent) => any;
 };
 
@@ -30,6 +31,7 @@ export function Button({
   iconPosition,
   asyncLoading,
   iconClassName,
+  disabled,
   ...props
 }: ButtonPropsType) {
   const [loading, setLoading] = useState(false);
@@ -87,6 +89,7 @@ export function Button({
         </Link>
       ) : (
         <button
+          disabled={disabled}
           className={`${buttonStyle} ${className}`}
           onClick={(e) => onClick(e)}
           ref={props.innerRef as MutableRefObject<HTMLButtonElement>}
