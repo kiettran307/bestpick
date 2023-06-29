@@ -4,7 +4,7 @@ import Image from "next/image";
 type NewBrand = Brand & {
   width: number;
   height: number;
-}
+};
 
 const brandsData: NewBrand[] = [
   {
@@ -43,21 +43,17 @@ const brandsData: NewBrand[] = [
 
 const Brands = () => {
   return (
-    <section className="pt-16">
-      <div className="">
-        <div className="flex flex-wrap">
-          <div className="flex w-full items-center justify-center bg-primary-light flex-col py-10">
-            <div className="mb-16 text-4xl text-black font-bold">Features On</div>
-            <div
-              className="wow fadeInUp grid w-full max-w-[1216px] items-center justify-center gap-10 lg:flex md:grid-cols-2 sm:grid-cols-2 grid-cols-1"
-              data-wow-delay=".1s
+    <section className="container pt-8 lg:pt-16">
+      <div className="flex flex-col items-center justify-center w-full py-10 bg-white">
+        <div className="mb-16 text-4xl font-bold text-black">Features On</div>
+        <div
+          className="grid w-full grid-cols-2 gap-4 wow fadeInUp lg:grid-cols-4 lg:gap-10 "
+          data-wow-delay=".1s
               "
-            >
-              {brandsData.map((brand) => (
-                <SingleBrand key={brand.id} brand={brand} />
-              ))}
-            </div>
-          </div>
+        >
+          {brandsData.map((brand) => (
+            <SingleBrand key={brand.id} brand={brand} />
+          ))}
         </div>
       </div>
     </section>
@@ -70,12 +66,12 @@ const SingleBrand = ({ brand }: { brand: NewBrand }) => {
   const { href, image, name, width, height } = brand;
 
   return (
-    <div className="mx-3 flex w-full items-center justify-center h-[140px] lg:mx-5 md:mx-auto lg:w-full sm:mx-auto md:w-fit sm:w-fit">
+    <div className="mx-3 flex h-[140px] w-full items-center justify-center sm:mx-auto sm:w-fit md:mx-auto md:w-fit lg:mx-5 lg:w-full">
       <a
         href={href}
         target="_blank"
         rel="nofollow noreferrer"
-        className="relative w-full flex justify-center"
+        className="relative flex justify-center w-full"
       >
         <Image src={image} alt={name} width={width} height={height} />
       </a>
