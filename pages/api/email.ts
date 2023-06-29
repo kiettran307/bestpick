@@ -1,25 +1,19 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import * as nodemailer from "nodemailer";
 const authAdmin = {
-  email: "tuanva@bestpicktechnology.com",
-  pass: "Tuan@1604",
+  email: "tva19991604@gmail.com",
+  pass: "azewfgvzfpaskliz",
 };
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const transporter = nodemailer.createTransport({
-    service: "Outlook365",
-    host: "smtp.office365.com",
-    port: "587",
-    tls: {
-      ciphers: "SSLv3",
-      rejectUnauthorized: false,
-    },
+    service: 'gmail',
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
     auth: {
-      user: authAdmin.email,
-      pass: authAdmin.pass,
-    },
-    // tls: {
-    //   ciphers: "SSLv3",
-    // },
+        user: authAdmin.email,
+        pass: authAdmin.pass
+    }
   });
 
   const { name, email, message } = req.body;
