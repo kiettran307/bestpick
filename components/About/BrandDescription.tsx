@@ -29,8 +29,8 @@ const imagesViewData: ImageViewType[] = [
 
 const BrandDescription = (): JSX.Element => {
   return (
-    <div className="relative z-10 overflow-hidden bg-primary-light pb-16 pt-[80px]">
-      <div className="container flex w-full flex-col items-center gap-14 bg-primary-light px-8 md:flex-col md:justify-center lg:flex-row lg:justify-start">
+    <div className="relative z-10 overflow-hidden bg-white pb-16 pt-[80px]">
+      <div className="container flex flex-col items-center w-full px-8 bg-white gap-14 md:flex-col md:justify-center lg:flex-row lg:justify-start">
         <div className="flex flex-col gap-6 lg:max-w-[570px]">
           <div>
             <Image
@@ -65,7 +65,7 @@ const BrandDescription = (): JSX.Element => {
             <Button
               href="https://www.baitonghotel.asia"
               className={
-                "rounded-md bg-primary px-8 py-3 text-base font-bold text-black duration-300 ease-in-out hover:bg-primary/80"
+                "rounded-2xl bg-primary px-8 py-3 text-base font-bold text-black duration-300 ease-in-out hover:bg-primary/80"
               }
               text="Visit Website"
             ></Button>

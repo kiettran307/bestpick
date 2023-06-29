@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const BannerComponent = ({ banner }: { banner: Banner }) => {
   return (
-    <div className=" bg-primary-light pb-8 lg:pb-16 pt-[100px]">
-      <div className="container w-full px-8 bg-primary-light lg:flex-row md:flex-col sm:flex-col">
+    <div className=" bg-white pb-8 lg:pb-16 pt-[100px]">
+      <div className="container w-full px-8 bg-white lg:flex-row md:flex-col sm:flex-col">
         <div className="flex flex-wrap -mx-4">
           <div className="flex flex-col items-center w-full px-33 gap-x-8 lg:flex-row">
             <div

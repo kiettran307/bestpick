@@ -38,7 +38,7 @@ const usefulFeatures: UsefulFeatureType[] = [
 ];
 export function UsefulFeatures({}: Props) {
   return (
-    <section className="py-8 bg-primary-light md:py-14 lg:py-20">
+    <section className="py-8 bg-white md:py-14 lg:py-20">
       <div className="container">
         <div className={`mb-11 text-center lg:mb-16`} data-wow-delay=".1s">
           <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-2xl md:text-4xl">
