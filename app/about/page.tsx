@@ -28,7 +28,7 @@ const AboutPage = () => {
         our best to bring a mix of global culture and taste."
       />
       <BrandDescription />
-      <CareerComponent />
+      {/* <CareerComponent /> */}
     </>
   );
 };
