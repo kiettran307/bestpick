@@ -46,7 +46,7 @@ export function FormContact() {
       <Button
         disabled={!values.email || !values.message}
         text="Submit now"
-        className={"rounded-2xl !px-8 !py-3 " + `${values.email && values.message ? 'bg-primary' : 'bg-[#EAE9E9] text-[#969695] hover:shadow-none'}`}
+        className={"rounded-2xl !px-8 !py-3 " + `${values.email && values.message ? 'bg-primary text-white' : 'bg-[#EAE9E9] text-[#969695] hover:shadow-none'}`}
       />
     </form>
   );

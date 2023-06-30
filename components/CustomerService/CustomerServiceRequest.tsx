@@ -39,7 +39,7 @@ export  function CustomerServiceRequest({}: Props) {
       />
       <Button
         text="Submit now"
-        className={"rounded-2xl bg-primary !px-8 !py-3"}
+        className={"rounded-2xl bg-primary text-white !px-8 !py-3"}
       />
     </form>
   );
