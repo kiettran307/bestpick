@@ -18,7 +18,7 @@ export default function CustomerServicePage({}: Props) {
   return (
     <>
       <BannerComponent banner={bannerProps} />
-      <section className="container my-10  rounded-[32px] bg-[#FFFBCE] p-8 lg:my-20  lg:p-16 ">
+      <section className="container my-10  rounded-[32px] border border-primary p-8 lg:my-20  lg:p-16 ">
         <div className="lg:w-1/2">
           <h3 className="text-xl font-semibold leading-10 text-black lg:text-[32px]">
             Enter your request and we would love to hear from you

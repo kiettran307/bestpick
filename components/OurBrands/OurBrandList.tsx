@@ -34,7 +34,7 @@ function OurBrandItem({ brand }: { brand: BrandType }) {
         href={brand?.path}
         
         className={`rounded-xl ${
-          brand?.active ? "bg-primary" : "bg-[#EAE9E9] text-[#969695]"
+          brand?.active ? "bg-primary text-white" : "bg-[#EAE9E9] text-[#969695]"
         } `}
       />
     </div>

@@ -32,7 +32,7 @@ export function AccordionItem(props: {
       >
         <h5
           className={`text-base font-medium lg:text-lg transition-all delay-75 ${
-            active === id ? "text-[#EABC18]" : "text-black"
+            active === id ? "text-primary" : "text-black"
           }`}
         >
           {header}

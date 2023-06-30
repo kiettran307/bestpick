@@ -33,7 +33,7 @@ export function News({}: Props) {
           <Button
             text="See more"
             className={
-              "rounded-2xl border border-primary text-[#EABC18] hover:bg-primary hover:text-white hover:shadow-none !px-8 "
+              "rounded-2xl border border-primary text-primary hover:bg-primary hover:text-white hover:shadow-none !px-8 "
             }
           />
         </div>

@@ -66,7 +66,7 @@ const CareerComponent = (): JSX.Element => {
           paragraph="Be a Part of Our Company"
           center
         />
-        <div className="flex flex-col items-center justify-center gap-10 px-8 py-10 lg:px-16 lg:py-20 lg:gap-20 rounded-xl bg-primary-light lg:flex-row md:flex-col">
+        <div className="flex flex-col items-center justify-center gap-10 px-8 py-10 bg-white border lg:px-16 lg:py-20 lg:gap-20 rounded-3xl border-primary lg:flex-row md:flex-col">
           <div className="flex flex-col gap-6">
             {Jobs.map((item, i) => {
               return (
@@ -79,7 +79,7 @@ const CareerComponent = (): JSX.Element => {
               );
             })}
             <div>
-              <button className="px-8 py-3 text-base font-bold text-black duration-300 ease-in-out rounded-md bg-primary hover:bg-primary/80">
+              <button className="px-8 py-3 text-base font-bold text-white duration-300 ease-in-out rounded-md bg-primary hover:bg-primary/80">
                 Apply now
               </button>
             </div>
