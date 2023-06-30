@@ -79,7 +79,7 @@ const CareerComponent = (): JSX.Element => {
               );
             })}
             <div>
-              <button className="px-8 py-3 text-base font-bold text-black duration-300 ease-in-out rounded-md bg-primary hover:bg-primary/80">
+              <button className="px-8 py-3 text-base font-bold text-white duration-300 ease-in-out rounded-md bg-primary hover:bg-primary/80">
                 Apply now
               </button>
             </div>

@@ -65,7 +65,7 @@ const BrandDescription = (): JSX.Element => {
             <Button
               href="https://www.baitonghotel.asia"
               className={
-                "rounded-2xl bg-primary px-8 py-3 text-base font-bold text-black duration-300 ease-in-out hover:bg-primary/80"
+                "rounded-2xl bg-primary px-8 py-3 text-base font-bold text-white duration-300 ease-in-out hover:bg-primary/80"
               }
               text="Visit Website"
             ></Button>

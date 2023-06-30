@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="container overflow-hidden rounded-[32px] bg-white border border-[#EABC18] p-4 md:py-16 lg:p-16"
+      className="container overflow-hidden rounded-[32px] bg-white border border-primary p-4 md:py-16 lg:p-16"
     >
       <div className="flex flex-col-reverse items-center -mx-4 lg:flex-row">
         <div className="flex flex-col justify-center w-full p-4 lg:w-7/12 xl:w-8/12">

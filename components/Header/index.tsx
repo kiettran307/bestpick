@@ -99,7 +99,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-white group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${pathname === menuItem.path ? 'text-yellow-1' : 'text-white'}`}
+                            className={`flex py-2 text-white group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${pathname === menuItem.path ? 'text-primary' : 'text-white'}`}
                             
                           >
                             {menuItem.title}
@@ -144,7 +144,7 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <Link
-                  className="ease-in-up flex w-[100px] justify-center rounded-2xl bg-primary px-1 py-2 text-black transition duration-300 md:w-[120px] lg:w-auto lg:px-6 lg:py-3"
+                  className="ease-in-up flex w-[100px] justify-center rounded-2xl bg-primary px-1 py-2 text-white border transition duration-300 md:w-[120px] lg:w-auto lg:px-6 lg:py-3"
                   href="/our-brands"
                 >
                   Our Brands
