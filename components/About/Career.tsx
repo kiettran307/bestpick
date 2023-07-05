@@ -36,7 +36,7 @@ const Jobs: Job[] = [
 
 const Authors: Author[] = [
   {
-    name: "Ryoo",
+    name: "Ryoo Seung - Kuk",
     img: "/images/about/auth1.png",
     position: "CEO",
   },
@@ -51,7 +51,7 @@ const Authors: Author[] = [
     position: "CFO",
   },
   {
-    name: "Quang",
+    name: "Trần Văn Quang",
     img: "/images/about/auth4.png",
     position: "Marketing Manager",
   },
