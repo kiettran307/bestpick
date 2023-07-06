@@ -12,7 +12,7 @@ export default function OurBrandsPage({}: Props) {
       <OurBrandsBanner />
       <OurBrandList />
       <AskedQuestions isHasContactBox={false} />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 }

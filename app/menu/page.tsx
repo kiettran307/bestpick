@@ -25,7 +25,7 @@ const Blog = () => {
       />
       <Products />
       <AskedQuestions isHasContactBox={false} />
-      <Contact />
+      {/* <Contact /> */}
     </>
   );
 };

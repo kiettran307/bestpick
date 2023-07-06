@@ -29,9 +29,9 @@ export default function CustomerServicePage({}: Props) {
           </p>
         </div>
         <div className="flex flex-col items-center justify-between lg:flex-row gap-14 ">
-          <div className="w-full lg:w-2/3">
+          {/* <div className="w-full lg:w-2/3">
             <CustomerServiceRequest />
-          </div>
+          </div> */}
           <div className="w-full lg:flex-1">
             <CustomerServiceMap />
           </div>
