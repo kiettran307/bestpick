@@ -18,13 +18,13 @@ const Footer = () => {
             <div className="w-full pr-4 md:w-1/2 lg:w-4/12 xl:w-4/12">
               <div className="mb-12 pl-4 w-full lg:max-w-[316px] md:pl-0 lg:mb-16">
                 <Link href="/" className="inline-block mb-6">
-                  <Image
-                    src="/images/logo-footer.png"
-                    alt="logo"
-                    className="w-full"
-                    width={140}
-                    height={30}
-                  />
+                <Image
+                  src="/images/logo/LogoBlack.svg"
+                  alt="logo"
+                  width={132}
+                  height={47}
+                  className="w-full dark:block"
+                />
                 </Link>
                 <p className="mb-4 text-base font-light leading-relaxed text-black lg:mb-8 lg:text-lg">
                   Best Pick F&B is a company that specializes in producing and

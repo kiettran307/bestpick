@@ -53,7 +53,7 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/Logo BestPick edit OK-01.svg"
+                  src="/images/logo/LogoWhite.svg"
                   alt="logo"
                   width={132}
                   height={47}
